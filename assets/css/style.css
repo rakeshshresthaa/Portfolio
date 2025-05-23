@@ -1341,3 +1341,147 @@ textarea.input-field {
   .about-banner { max-width: 450px; }
 
 }
+
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 767px) {
+  .container {
+    padding-inline: 15px;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 20px;
+  }
+
+  .stats-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stats-card {
+    padding: 20px;
+  }
+
+  .about-content {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: calc(1.2rem + 1vw);
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .input-field {
+    padding: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding-inline: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .stats-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+/* Navigation Menu Mobile Enhancement */
+@media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background: var(--bg-primary);
+    padding: 80px 20px 20px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+}
+
+/* Hero Section Enhancement */
+@media (max-width: 991px) {
+  .hero {
+    min-height: calc(100vh - 80px);
+    padding: 40px 0;
+  }
+
+  .hero-banner {
+    margin-bottom: 30px;
+  }
+
+  .hero-banner img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Contact Form Enhancement */
+@media (max-width: 991px) {
+  .contact {
+    padding: 40px 0;
+  }
+
+  .contact-content {
+    margin-bottom: 30px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-list-item {
+    width: 100%;
+  }
+}
